@@ -1,0 +1,257 @@
+/* ========================================================================= */
+/* ARQUIVO DE ESTILO PERSONALIZADO PARA ALANS TECHI9 */
+/* ========================================================================= */
+
+:root {
+  --color-background: #0D1117;
+  --color-background-secondary: #161B22;
+  --color-text: #F0F6FC;
+  --color-text-secondary: #8B949E;
+  --color-accent: #08d4a4;
+  --color-accent-hover: #07b58c;
+  --color-magenta: #c828ef;
+  --color-border: #30363d;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --color-primary-ui: #2A9D8F;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Estilos para o Menu Móvel Robusto */
+
+/* =================================================== */
+/* MECANISMO ROBUSTO PARA ABRIR/FECHAR MENU MÓVEL     */
+/* =================================================== */
+.main-nav-mobile {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.main-nav-mobile.menu-aberto {
+  max-height: 500px;
+  /* Altura suficiente para mostrar todos os links */
+  padding-top: 0.5rem;
+  /* Adiciona um espaçamento quando o menu está aberto */
+  padding-bottom: 0.5rem;
+  transition: max-height 0.4s ease-in;
+}
+
+/* =================================================== */
+/* CORREÇÃO PARA GARANTIR O TAMANHO DOS BOTÕES        */
+/* =================================================== */
+.btn {
+  display: inline-block;
+  /* Essencial para que padding e dimensões funcionem */
+  padding: 0.75rem 1.5rem;
+  /* Adiciona espaçamento, dando tamanho ao botão */
+  text-align: center;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  /* Bordas arredondadas */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Garante que a classe do Tailwind 'block' funcione como esperado */
+.block.btn {
+  display: block;
+}
+
+/* ========================================================================= */
+/* EFEITO DE PARTÍCULAS (CORRIGIDO) */
+/* ========================================================================= */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Alterado para 0 */
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+/* ========================================================================= */
+/* COMPONENTES PERSONALIZADOS */
+/* ========================================================================= */
+
+.nav-link {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0.5rem auto 3rem auto;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--color-accent), var(--color-magenta));
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(8, 212, 164, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
+
+.card {
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: var(--color-background);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.card-link {
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+.plan-card {
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-card.featured {
+  border-color: var(--color-accent);
+  transform: scale(1.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.plan-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+.plan-price {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  margin: 1rem 0;
+}
+
+.plan-period {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.plan-features li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.plan-features li:first-child {
+  border-top: 1px solid var(--color-border);
+}

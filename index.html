@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alans techi9 - Tecnologia que transforma o seu futuro</title>
+  <meta name="description"
+    content="Soluções inovadoras de software, incluindo sistemas para salões, barbearias, lojas e clínicas.">
+  <meta name="theme-color" content="#08d4a4">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-background text-text font-sans">
+
+  <div id="particles-js"></div>
+  <div class="content-wrapper">
+
+    <header class="container mx-auto px-4 py-5 flex justify-between items-center relative z-20">
+      <a href="/" class="flex items-center space-x-3">
+        <img src="logo.svg" alt="Alans techi9 Logo" class="h-8 w-auto">
+      </a>
+      <nav class="hidden md:flex items-center space-x-6 main-nav">
+        <a href="#solucoes" class="nav-link">Soluções</a>
+        <a href="#galeria" class="nav-link">Protótipos</a>
+        <a href="#planos" class="nav-link">Planos</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Fale Conosco</a>
+        <a href="/login_page.html" class="btn btn-primary">Acessar Painel</a>
+      </nav>
+      <button class="md:hidden mobile-menu-button" aria-label="Abrir Menu" aria-expanded="false"
+        aria-controls="main-nav">
+        <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </header>
+    <div class="md:hidden main-nav-mobile" id="main-nav">
+      <a href="#solucoes" class="block py-2 px-4 text-sm nav-link">Soluções</a>
+      <a href="#galeria" class="block py-2 px-4 text-sm nav-link">Protótipos</a>
+      <a href="#planos" class="block py-2 px-4 text-sm nav-link">Planos</a>
+      <a href="#faq" class="block py-2 px-4 text-sm nav-link">FAQ</a>
+      <a href="#contact" class="block py-2 px-4 text-sm nav-link">Fale Conosco</a>
+      <a href="/login_page.html" class="block mt-2 mx-4 btn btn-primary text-center">Acessar Painel</a>
+    </div>
+
+    <main class="container mx-auto px-4 text-center pt-20 pb-32 relative">
+      <h1 class="text-6xl md:text-8xl font-black mb-4 leading-tight">
+        Tecnologia que <span class="text-[var(--color-primary-ui)]">transforma</span> o seu futuro
+      </h1>
+      <p class="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+        Criamos soluções de software inovadoras e personalizadas que impulsionam o seu negócio. Da automação com IA à
+        agilidade de sistemas prontos para uso.
+      </p>
+      <a href="#galeria" class="btn btn-secondary">Conheça nossas soluções</a>
+    </main>
+
+    <div class="bg-background/80 backdrop-blur-sm">
+
+      <section id="solucoes" class="py-20 container mx-auto px-4 text-center">
+        <h2 class="section-title">Nossa Essência</h2>
+        <p class="section-subtitle">O que nos move e nos inspira a inovar todos os dias.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <div class="card p-8 text-center">
+            <div class="text-5xl mb-4">🎯</div>
+            <h3 class="card-title text-2xl">Missão</h3>
+            <p class="text-text-secondary">
+              Desenvolver soluções acessíveis que capacitam negócios a otimizar processos, aumentar a eficiência e
+              alcançar o sucesso.
+            </p>
+          </div>
+          <div class="card p-8 text-center">
+            <div class="text-5xl mb-4">👁️</div>
+            <h3 class="card-title text-2xl">Visão</h3>
+            <p class="text-text-secondary">
+              Ser referência em tecnologia para negócios locais, transformando a maneira como interagem com seus
+              clientes e gerenciam suas operações.
+            </p>
+          </div>
+          <div class="card p-8 text-center">
+            <div class="text-5xl mb-4">💎</div>
+            <h3 class="card-title text-2xl">Valores</h3>
+            <p class="text-text-secondary">
+              Compromisso com o cliente, inovação, agilidade, simplicidade e um suporte dedicado que vai além do
+              esperado.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="py-20 container mx-auto px-4 text-center">
+        <h2 class="section-title">Galeria de Protótipos</h2>
+        <p class="section-subtitle">Explore demonstrações interativas de nossos sistemas.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <div class="card flex flex-col"><img data-src="/thumb-salao.svg" alt="Protótipo Salão" class="card-image">
+            <div class="p-6 text-left flex flex-col flex-grow">
+              <h3 class="card-title">Sistema para Salão</h3>
+              <p class="card-description">Gestão completa de agendamentos, estoque e equipe.</p><a href="/Salão.html"
+                target="_blank" class="card-link mt-auto">Ver demonstração →</a>
+            </div>
+          </div>
+          <div class="card flex flex-col"><img data-src="/thumb-barbearia.svg" alt="Protótipo Barbearia"
+              class="card-image">
+            <div class="p-6 text-left flex flex-col flex-grow">
+              <h3 class="card-title">Software para Barbearia</h3>
+              <p class="card-description">Controle o fluxo de clientes, serviços e feedback.</p><a
+                href="/Barbearia.html" target="_blank" class="card-link mt-auto">Ver demonstração →</a>
+            </div>
+          </div>
+          <div class="card flex flex-col"><img data-src="/thumb-roupas.svg" alt="Protótipo Loja" class="card-image">
+            <div class="p-6 text-left flex flex-col flex-grow">
+              <h3 class="card-title">Gestão para Lojas</h3>
+              <p class="card-description">Gerencie estoque, vendas, clientes e fornecedores.</p><a href="/Roupas.html"
+                target="_blank" class="card-link mt-auto">Ver demonstração →</a>
+            </div>
+          </div>
+          <div class="card flex flex-col"><img data-src="/thumb-clinicas.svg" alt="Protótipo Clínicas"
+              class="card-image">
+            <div class="p-6 text-left flex flex-col flex-grow">
+              <h3 class="card-title">Sistemas para Clínicas</h3>
+              <p class="card-description">Agendamentos, prontuários e faturamento simplificados.</p><a
+                href="/clinicas.html" target="_blank" class="card-link mt-auto">Ver demonstração →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="planos" class="py-20 bg-background-secondary/80">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="section-title">Nossos Planos</h2>
+          <p class="section-subtitle">Escolha o plano que melhor se adapta ao seu negócio.</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
+            <div class="plan-card">
+              <h3 class="plan-title">BÁSICO</h3>
+              <p class="plan-price">R$ 150<span class="plan-period">/mês</span></p>
+              <ul class="plan-features">
+                <li>Agendamento</li>
+                <li>Cadastro de Clientes e Serviços</li>
+                <li>Relatório Financeiro Simples</li>
+                <li>Servidor Local</li>
+              </ul><a href="#contact" class="btn btn-secondary w-full mt-auto">Contratar</a>
+            </div>
+            <div class="plan-card featured"><span class="featured-badge">Mais Popular</span>
+              <h3 class="plan-title">IDEAL</h3>
+              <p class="plan-price">R$ 250<span class="plan-period">/mês</span></p>
+              <ul class="plan-features">
+                <li><strong>Tudo do plano BÁSICO</strong></li>
+                <li>Painel Administrativo</li>
+                <li>Múltiplos Usuários</li>
+                <li>Painel Personalizado</li>
+              </ul><a href="#contact" class="btn btn-primary w-full mt-auto">Contratar</a>
+            </div>
+            <div class="plan-card">
+              <h3 class="plan-title">FUTURISTIC</h3>
+              <p class="plan-price">R$ 450<span class="plan-period">/mês</span></p>
+              <ul class="plan-features">
+                <li><strong>Tudo do plano IDEAL</strong></li>
+                <li>Integração com WhatsApp Business</li>
+                <li>Site Personalizado</li>
+                <li>Personalização Total da Marca</li>
+              </ul><a href="#contact" class="btn btn-secondary w-full mt-auto">Contratar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="py-20 container mx-auto px-4">
+        <div class="text-center">
+          <h2 class="section-title">Perguntas Frequentes ❓</h2>
+          <p class="section-subtitle">Encontre respostas para as suas dúvidas mais comuns.</p>
+        </div>
+        <div class="max-w-3xl mx-auto space-y-4 mt-12">
+          <div class="card p-6 faq-item cursor-pointer">
+            <h3 class="card-title text-lg flex justify-between items-center">
+              <span>Como posso começar a usar um dos sistemas?</span>
+              <span class="faq-icon text-xl text-accent">＋</span>
+            </h3>
+            <div class="faq-answer text-text-secondary mt-2">
+              <p class="pt-4 border-t border-border">É muito simples! Entre em contato conosco através do formulário
+                abaixo. Agendaremos uma breve demonstração para entender suas necessidades e iniciar a implementação.
+              </p>
+            </div>
+          </div>
+          <div class="card p-6 faq-item cursor-pointer">
+            <h3 class="card-title text-lg flex justify-between items-center">
+              <span>Os sistemas são personalizáveis?</span>
+              <span class="faq-icon text-xl text-accent">＋</span>
+            </h3>
+            <div class="faq-answer text-text-secondary mt-2">
+              <p class="pt-4 border-t border-border">Sim. Embora nossos protótipos sejam prontos para uso, oferecemos
+                personalizações para garantir que o sistema atenda perfeitamente às particularidades do seu negócio.</p>
+            </div>
+          </div>
+          <div class="card p-6 faq-item cursor-pointer">
+            <h3 class="card-title text-lg flex justify-between items-center">
+              <span>Qual é o tipo de suporte oferecido?</span>
+              <span class="faq-icon text-xl text-accent">＋</span>
+            </h3>
+            <div class="faq-answer text-text-secondary mt-2">
+              <p class="pt-4 border-t border-border">Oferecemos suporte técnico completo via WhatsApp e canais diretos
+                para garantir que qualquer dúvida ou problema seja resolvido rapidamente por nossa equipe.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-20 container mx-auto px-4">
+        <div class="text-center">
+          <h2 class="section-title">Fale Conosco 📞</h2>
+          <p class="section-subtitle">Estamos prontos para ouvir sua ideia e transformá-la em uma solução de sucesso.
+          </p>
+        </div>
+
+        <div class="mt-12 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+          <div class="space-y-8 text-left">
+            <div>
+              <h3 class="text-2xl font-bold text-white mb-4">Informações de Contato</h3>
+              <p class="text-text-secondary">Prefere um contato mais direto? Escolha uma das opções abaixo. Estamos
+                sempre disponíveis para ajudar.</p>
+            </div>
+
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4">
+                <div class="bg-background-secondary p-3 rounded-full">
+                  <svg class="w-6 h-6 text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-white">Nosso E-mail</h4>
+                  <p class="text-text-secondary">Envie suas dúvidas ou propostas.</p>
+                  <a href="mailto:contato@alanstechi9.com.br"
+                    class="text-accent hover:underline">contato@alanstechi9.com.br</a>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-background-secondary p-3 rounded-full">
+                  <svg class="w-6 h-6 text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 6.75z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-white">Telefone & WhatsApp</h4>
+                  <p class="text-text-secondary">Converse com nossa equipe agora mesmo.</p>
+                  <a href="https://wa.me/5563981163822" target="_blank" class="text-accent hover:underline">+55 (63)
+                    98116-3822</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-border">
+              <h4 class="text-lg font-semibold text-white mb-4">Siga-nos</h4>
+              <div class="flex space-x-4">
+                <a href="#" target="_blank" aria-label="Instagram"
+                  class="text-text-secondary hover:text-accent transition-colors">
+                  <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.441c-3.193 0-3.563.011-4.803.068-2.906.132-4.14 1.37-4.272 4.272-.057 1.24-.067 1.614-.067 4.757s.01 3.517.067 4.757c.132 2.906 1.366 4.14 4.272 4.272 1.24.057 1.61.068 4.803.068 3.193 0 3.563-.011 4.803-.068 2.906-.132 4.14-1.37 4.272-4.272.057-1.24.067-1.614.067-4.757s-.01-3.517-.067-4.757c-.132-2.906-1.366-4.14-4.272-4.272-1.24-.057-1.61-.068-4.803-.068zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.88c-2.607 0-4.718-2.111-4.718-4.718s2.111-4.718 4.718-4.718 4.718 2.111 4.718 4.718-2.111 4.718-4.718 4.718zm6.362-10.88c-.793 0-1.438-.644-1.438-1.438s.645-1.438 1.438-1.438 1.438.644 1.438 1.438-.645 1.438-1.438 1.438z" />
+                  </svg>
+                </a>
+                <a href="#" target="_blank" aria-label="LinkedIn"
+                  class="text-text-secondary hover:text-accent transition-colors">
+                  <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card p-8">
+            <h3 class="text-2xl font-bold text-white mb-6 text-left">Solicite um contato</h3>
+            <p class="text-text-secondary text-left mb-6 -mt-4">Preencha os campos abaixo e nossa equipe entrará em
+              contato com você.</p>
+            <form id="contact-form" class="space-y-4">
+
+              <input type="text" id="contact-name" name="name" placeholder="Seu nome completo" required
+                class="w-full p-3 rounded-md bg-background-secondary border border-border focus:outline-none focus:ring-2 focus:ring-accent">
+
+              <input type="text" id="contact-company" name="company" placeholder="Nome da sua empresa (opcional)"
+                class="w-full p-3 rounded-md bg-background-secondary border border-border focus:outline-none focus:ring-2 focus:ring-accent">
+
+              <input type="tel" id="contact-phone" name="phone" placeholder="Seu telefone com DDD" required
+                class="w-full p-3 rounded-md bg-background-secondary border border-border focus:outline-none focus:ring-2 focus:ring-accent">
+
+              <button type="submit" class="btn btn-primary w-full">Solicitar Contato via WhatsApp</button>
+            </form>
+            <div id="form-status" class="mt-4 text-text-secondary hidden"></div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="bg-background-secondary border-t border-border py-8">
+      <div class="container mx-auto px-4 text-center text-text-secondary">
+        <p>&copy; 2025 Alans techi9. Todos os direitos reservados.</p>
+        <p class="mt-2">Tecnologia que transforma o seu futuro.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="/main.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protótipo Clínicas - Alans techi9</title>
+
+  <meta name="description"
+    content="Protótipo de sistema para clínicas com agendamento, prontuário eletrônico de pacientes e gestão financeira.">
+
+  <!-- Fonte Inter do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS e Estilos Personalizados -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-background text-text font-sans flex flex-col min-h-screen">
+
+  <!-- Cabeçalho -->
+  <header class="container mx-auto px-4 py-5 flex justify-between items-center z-20">
+    <a href="/" class="flex items-center space-x-3">
+      <img src="logo.svg" alt="Alans techi9 Logo" class="h-8 w-auto">
+      <span class="text-2xl font-bold text-accent">Alans techi9</span>
+    </a>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="flex-grow container mx-auto px-4 py-10">
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <div class="md:order-2">
+        <div class="card">
+          <img src="thumb-clinicas.svg" alt="Visual do protótipo Clínicas" class="rounded-t-lg">
+          <div class="p-6">
+            <h3 class="card-title">Preview do Sistema</h3>
+            <p class="card-description">Este é um exemplo visual do layout do sistema, focado em usabilidade e design
+              limpo.</p>
+            <a href="/dashboard_clinicas.html" class="btn btn-primary w-full mt-4">Testar Painel de Demonstração</a>
+          </div>
+        </div>
+      </div>
+      <div class="md:order-1">
+        <h1 class="text-4xl font-extrabold text-white">Sistema para Clínicas</h1>
+        <p class="mt-4 text-lg text-text-secondary">Protótipo para clínicas com agendamento, prontuário eletrônico e
+          histórico de atendimentos.</p>
+        <h3 class="text-2xl font-bold text-white mt-8 mb-4">Funcionalidades Principais</h3>
+        <ul class="space-y-3 text-text-secondary">
+          <li class="flex items-start"><span class="text-accent mr-3">✔</span> Prontuário eletrônico do paciente (PEP)
+            seguro e de fácil acesso.</li>
+          <li class="flex items-start"><span class="text-accent mr-3">✔</span> Agenda médica com gestão de horários,
+            salas e equipamentos.</li>
+          <li class="flex items-start"><span class="text-accent mr-3">✔</span> Controle financeiro, gestão de convênios
+            e faturamento.</li>
+          <li class="flex items-start"><span class="text-accent mr-3">✔</span> Prescrições e atestados digitais.</li>
+          <li class="flex items-start"><span class="text-accent mr-3">✔</span> Confirmação de consulta automatizada via
+            WhatsApp.</li>
+        </ul>
+        <a href="/index.html#planos" class="btn btn-secondary mt-8">Ver Planos</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-background py-8 mt-10">
+    <div class="container mx-auto px-4 text-center text-text-secondary">
+      <p>&copy; 2025 Alans techi9. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

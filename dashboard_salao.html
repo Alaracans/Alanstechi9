@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Salão de Beleza - Alans techi9</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-background text-text font-sans">
+
+    <div id="particles-js"></div>
+
+    <div class="content-wrapper flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-16 md:w-64 bg-background text-text-secondary flex-shrink-0 transition-all duration-300">
+            <div class="p-4 md:p-5 text-center border-b border-border">
+                <a href="/dashboard_selecao.html" class="text-2xl font-bold text-accent">
+                    <span class="hidden md:inline">Salão</span>
+                    <span class="md:hidden">S</span>
+                </a>
+            </div>
+            <nav class="mt-5">
+                <a href="#"
+                    class="flex items-center justify-center md:justify-start px-4 md:px-6 py-3 text-text bg-background-secondary"><span
+                        class="hidden md:inline">Dashboard</span></a>
+                <a href="#"
+                    class="flex items-center justify-center md:justify-start px-4 md:px-6 py-3 hover:bg-gray-800"><span
+                        class="hidden md:inline">Agenda</span></a>
+                <a href="#"
+                    class="flex items-center justify-center md:justify-start px-4 md:px-6 py-3 hover:bg-gray-800"><span
+                        class="hidden md:inline">Clientes</span></a>
+                <a href="#"
+                    class="flex items-center justify-center md:justify-start px-4 md:px-6 py-3 hover:bg-gray-800"><span
+                        class="hidden md:inline">Profissionais</span></a>
+                <a href="#"
+                    class="flex items-center justify-center md:justify-start px-4 md:px-6 py-3 hover:bg-gray-800"><span
+                        class="hidden md:inline">Estoque</span></a>
+                <a href="#"
+                    class="flex items-center justify-center md:justify-start px-4 md:px-6 py-3 hover:bg-gray-800"><span
+                        class="hidden md:inline">Financeiro</span></a>
+                <div class="absolute bottom-0 w-16 md:w-64 transition-all duration-300">
+                    <a href="/dashboard_selecao.html"
+                        class="flex items-center justify-center md:justify-start px-4 md:px-6 py-3 hover:bg-gray-800"><span
+                            class="hidden md:inline">Voltar</span></a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="flex-1 p-6 md:p-10 overflow-y-auto">
+            <h1 class="text-3xl font-bold text-white mb-8">Dashboard Salão de Beleza</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="card p-6">
+                    <h3 class="text-lg font-semibold text-text-secondary">Agendamentos (Dia)</h3>
+                    <p class="text-4xl font-extrabold text-accent mt-2">42</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-lg font-semibold text-text-secondary">Produtos Baixos</h3>
+                    <p class="text-4xl font-extrabold text-magenta mt-2">3</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-lg font-semibold text-text-secondary">Faturamento (Mês)</h3>
+                    <p class="text-4xl font-extrabold text-accent mt-2">R$ 12.4k</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-lg font-semibold text-text-secondary">Comissões (Mês)</h3>
+                    <p class="text-4xl font-extrabold text-accent mt-2">R$ 4.1k</p>
+                </div>
+            </div>
+            <div class="card p-6">
+                <h3 class="card-title">Agenda do Dia</h3>
+                <div class="overflow-x-auto mt-4">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b border-border">
+                                <th class="py-3 px-4">Horário</th>
+                                <th class="py-3 px-4">Cliente</th>
+                                <th class="py-3 px-4 hidden sm:table-cell">Serviço</th>
+                                <th class="py-3 px-4 hidden md:table-cell">Profissional</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-text-secondary">
+                            <tr class="border-b border-border hover:bg-background-secondary">
+                                <td class="py-3 px-4">16:00</td>
+                                <td class="py-3 px-4">Ana Clara</td>
+                                <td class="py-3 px-4 hidden sm:table-cell">Manicure & Pedicure</td>
+                                <td class="py-3 px-4 hidden md:table-cell">Juliana</td>
+                            </tr>
+                            <tr class="border-b border-border hover:bg-background-secondary">
+                                <td class="py-3 px-4">16:30</td>
+                                <td class="py-3 px-4">Beatriz Lima</td>
+                                <td class="py-3 px-4 hidden sm:table-cell">Escova Progressiva</td>
+                                <td class="py-3 px-4 hidden md:table-cell">Carla</td>
+                            </tr>
+                            <tr class="hover:bg-background-secondary">
+                                <td class="py-3 px-4">17:00</td>
+                                <td class="py-3 px-4">Mariana Borges</td>
+                                <td class="py-3 px-4 hidden sm:table-cell">Corte</td>
+                                <td class="py-3 px-4 hidden md:table-cell">Fernanda</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/main.js" defer></script>
+</body>
+
+</html>

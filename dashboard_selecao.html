@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecione um Protótipo - Alans techi9</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-background text-text font-sans">
+
+    <div id="particles-js"></div>
+
+    <div class="content-wrapper flex flex-col min-h-screen">
+        <header class="container mx-auto px-4 py-5 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-3">
+                <img src="/logo.svg" alt="Alans techi9 Logo" class="h-8 w-auto">
+                <span class="text-2xl font-bold text-accent">Alans techi9</span>
+            </a>
+            <a href="/index.html" class="nav-link hover:text-accent">Sair</a>
+        </header>
+
+        <main class="flex-grow container mx-auto px-4 text-center py-10">
+            <h1 class="section-title">Bem-vindo à Demonstração</h1>
+            <p class="section-subtitle">Selecione um dos protótipos de painel administrativo abaixo para explorar as
+                funcionalidades específicas de cada área.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                <!-- Card Barbearia -->
+                <a href="/dashboard_barbearia.html" class="card flex flex-col text-left no-underline">
+                    <img src="/thumb-barbearia.svg" alt="Protótipo Barbearia" class="card-image">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="card-title">Painel Barbearia</h3>
+                        <p class="card-description">Focado em agendamentos, clientes e serviços rápidos.</p>
+                        <span class="card-link mt-auto">Explorar Painel →</span>
+                    </div>
+                </a>
+                <!-- Card Salão -->
+                <a href="/dashboard_salao.html" class="card flex flex-col text-left no-underline">
+                    <img src="/thumb-salao.svg" alt="Protótipo Salão" class="card-image">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="card-title">Painel Salão de Beleza</h3>
+                        <p class="card-description">Gestão de múltiplos profissionais, comissões e estoque.</p>
+                        <span class="card-link mt-auto">Explorar Painel →</span>
+                    </div>
+                </a>
+                <!-- Card Lojas -->
+                <a href="/dashboard_lojas.html" class="card flex flex-col text-left no-underline">
+                    <img src="/thumb-roupas.svg" alt="Protótipo Lojas" class="card-image">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="card-title">Painel para Lojas</h3>
+                        <p class="card-description">Controle de estoque, vendas (PDV) e relatórios financeiros.</p>
+                        <span class="card-link mt-auto">Explorar Painel →</span>
+                    </div>
+                </a>
+                <!-- Card Clínicas -->
+                <a href="/dashboard_clinicas.html" class="card flex flex-col text-left no-underline">
+                    <img src="/thumb-clinicas.svg" alt="Protótipo Clínicas" class="card-image">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="card-title">Painel para Clínicas</h3>
+                        <p class="card-description">Foco em prontuário de pacientes, agenda médica e faturamento.</p>
+                        <span class="card-link mt-auto">Explorar Painel →</span>
+                    </div>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/main.js" defer></script>
+</body>
+
+</html>

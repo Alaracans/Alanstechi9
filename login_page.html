@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar - Alans techi9</title>
+
+  <!-- Fonte Inter do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS e Estilos Personalizados -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-background text-text font-sans flex flex-col min-h-screen">
+
+  <!-- Cabeçalho -->
+  <header class="container mx-auto px-4 py-5 flex justify-between items-center z-20">
+    <a href="/" class="flex items-center space-x-3">
+      <img src="logo.svg" alt="Alans techi9 Logo" class="h-8 w-auto">
+      <span class="text-2xl font-bold text-accent">Alans techi9</span>
+    </a>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="flex-grow flex items-center justify-center p-4">
+    <div class="card w-full max-w-md p-8">
+      <h2 class="text-2xl font-bold text-center text-white mb-2">Acessar o Painel</h2>
+      <p class="text-text-secondary text-center mb-6">Entre com seus dados para acessar a demonstração.</p>
+
+      <form onsubmit="event.preventDefault(); window.location.href='/dashboard.html';" aria-label="Formulário de login">
+        <div class="mb-4">
+          <label for="email" class="sr-only">E-mail</label>
+          <input id="email"
+            class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
+            type="email" placeholder="email@exemplo.com" required value="demo@alans.tech">
+        </div>
+        <div class="mb-6">
+          <label for="password" class="sr-only">Senha</label>
+          <input id="password"
+            class="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
+            type="password" placeholder="Senha" required value="123456">
+        </div>
+        <button class="btn btn-primary w-full" type="submit">Entrar na Demonstração</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-background py-8">
+    <div class="container mx-auto px-4 text-center text-text-secondary">
+      <p>&copy; 2025 Alans techi9. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
